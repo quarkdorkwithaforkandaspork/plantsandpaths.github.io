@@ -1,0 +1,278 @@
+
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+h1 {
+  margin: none;
+}
+
+h3 {
+  margin-bottom: 3%;
+  margin-top: 3%;
+  font-family: fantasy, Papyrus;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+header {
+  max-width: 1500px;
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 3%;
+}
+
+main {
+  max-width: 1500px;
+  padding-top: 0;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+img {
+  width: 100%;
+  min-width: 350px;
+  max-width: 350px;
+  display: block;
+}
+
+summary::marker {
+  content: "";
+}
+
+summary::after {
+  font-family: fantasy, Papyrus;
+}
+
+#plantgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(0,350px));
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.centerh {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 150%;
+}
+
+.cardtitle {
+  margin-left: 1rem;
+}
+
+.card {
+  background-color: blueviolet;
+  display: flex;
+  min-width: 0px;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  min-width: 350px;
+  max-width: 350px;
+}
+
+.card p {
+  font-family: fantasy, Papyrus;
+}
+
+.plantimage {
+  background-color: aqua;
+  display: inline-block;
+  width: 40vw;
+  min-width: 350px;
+  max-width: 350px;
+  transition: transform 0.25s ease-in-out;
+  transform: none;
+  transform-origin: center;
+}
+
+.underlay {
+  position: absolute;
+  bottom: 0;
+  transition: all .25s;
+  overflow-x: hidden;
+  width: 0;
+  height: 0;
+  background: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 50px;
+}
+
+.undertext {
+  color: white;
+  font-size: 20%;
+
+}
+
+.plantimage:hover {
+  transform: scale(1.2) rotate3d(1, 2, 1, 20deg);
+}
+
+.plantimage:hover .underlay,
+underlay:hover {
+  width: 100%;
+  height: 25%;
+}
+
+.wfound:not(:open){
+  & summary{
+    &::after{
+      content: "Found it?";
+    }
+  }
+}
+
+.wfound:open{
+  & summary{
+    &::after{
+      content: "The Wizard";
+
+    }
+      pointer-events: none;
+      user-select: none;
+  }
+}
+
+.ffound:not(:open){
+  & summary{
+    &::after{
+      content: "Found it?";
+    }
+  }
+}
+
+.ffound:open{
+  & summary{
+    &::after{
+      content: "The Fighter";
+    }
+      pointer-events: none;
+      user-select: none;
+  }
+}
+
+.dfound:not(:open){
+  & summary{
+    &::after{
+      content: "Found it?";
+    }
+  }
+}
+
+.dfound:open{
+  & summary{
+    &::after{
+      content: "The Druid";
+    }
+      pointer-events: none;
+      user-select: none;
+  }
+}
+
+.pfound:not(:open){
+  & summary{
+    &::after{
+      content: "Found it?";
+    }
+  }
+}
+
+.pfound:open{
+  & summary{
+    &::after{
+      content: "The Paladin";
+    }
+      pointer-events: none;
+      user-select: none;
+  }
+}
+
+.bfound:not(:open){
+  & summary{
+    &::after{
+      content: "Found it?";
+    }
+  }
+}
+
+.bfound:open{
+  & summary{
+    &::after{
+      content: "The Bard";
+    }
+      pointer-events: none;
+      user-select: none;
+  }
+}
+
+.cfound:not(:open){
+  & summary{
+    &::after{
+      content: "Found it?";
+    }
+  }
+}
+
+.cfound:open{
+  & summary{
+    &::after{
+      content: "The Cleric";
+    }
+      pointer-events: none;
+      user-select: none;
+  }
+}
+
+.sfound:not(:open){
+  & summary{
+    &::after{
+      content: "Found it?";
+    }
+  }
+}
+
+.sfound:open{
+  & summary{
+    &::after{
+      content: "The Sorcerer";
+    }
+      pointer-events: none;
+      user-select: none;
+  }
+}
+
+.rfound:not(:open){
+  & summary{
+    &::after{
+      content: "Found it?";
+    }
+  }
+}
+
+.rfound:open{
+  & summary{
+    &::after{
+      content: "The Rogue";
+    }
+      pointer-events: none;
+      user-select: none;
+  }
+}
