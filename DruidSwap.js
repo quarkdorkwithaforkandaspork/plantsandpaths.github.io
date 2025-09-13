@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (fighterimg.open) {
             changeImage("evilPlantShot.png");
         } else {
-            changeImage("standardPlantShot.jpg");
+            changeImage("loquat.jpg");
         }
     });    
 });

@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     function changeImage(a) {
-        document.getElementById("wimg").src = a;
+        document.getElementById("mimg").src = a;
     }
 
-    const foundimg = document.getElementById("wfoundid") // find specific wizard details element. classes apparently don't work here...
+    const foundimg = document.getElementById("mfoundid") //find details element
         foundimg.addEventListener("toggle", event => {
         if (foundimg.open) {
             changeImage("evilPlantShot.png");
         } else {
-            changeImage("southernliveoak.jpg");
+            changeImage("ballmoss.jpg");
         }
-    });
+    });    
 });
 
 // informed by ts stackoverflow thread: 

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (foundimg.open) {
             changeImage("evilPlantShot.png");
         } else {
-            changeImage("standardPlantShot.jpg");
+            changeImage("honeysuckle.jpg");
         }
     });    
 });
