@@ -1,0 +1,19 @@
+document.addEventListener('DOMContentLoaded', () => {
+
+    function changeImage(a) {
+        document.getElementById("cimg").src = a;
+    }
+
+    const foundimg = document.getElementById("cfoundid") //find details element
+        foundimg.addEventListener("toggle", event => {
+        if (foundimg.open) {
+            changeImage("./images/cleric.jpg");
+        } else {
+            changeImage("./images/agave.jpg");
+        }
+    });    
+});
+
+// informed by ts stackoverflow thread: 
+// https://stackoverflow.com/questions/70776623/how-can-i-change-picture-on-opening-closing-details-summary
+

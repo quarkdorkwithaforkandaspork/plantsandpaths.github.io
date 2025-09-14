@@ -35,7 +35,7 @@ body {
   width: 100vw;
   margin: 0;
   overflow-x: hidden;
-  background-image: url("wooden-floor-background.jpg");
+  background-image: url("./images/wooden-floor-background.jpg");
   background-attachment: fixed;
 }
 
@@ -100,7 +100,7 @@ summary::after {
 }
 
 .card {
-  background-image: url("oldpaper.jpg");
+  background-image: url("./images/oldpaper.jpg");
   background-size: cover;
   display: flex;
   min-width: 0px;
@@ -350,7 +350,7 @@ underlay:hover {
 }
 
 .plantdetailed {
-  background-image: url("oldpaper.jpg");
+  background-image: url("./images/oldpaper.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
