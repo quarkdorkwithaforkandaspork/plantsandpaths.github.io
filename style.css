@@ -158,10 +158,18 @@ underlay:hover {
   padding: 1%;
 }
 
+.point{
+  cursor: pointer;
+}
+
+.point:hover{
+  color: rgb(225, 57, 138);
+}
+
 .wfound:not(:open){
   & summary{
     &::after{
-      content: "Found it?";
+      content: "> Found it? <";
     }
   }
 }
@@ -180,7 +188,7 @@ underlay:hover {
 .ffound:not(:open){
   & summary{
     &::after{
-      content: "Found it?";
+      content: "> Found it? <";
     }
   }
 }
@@ -198,7 +206,7 @@ underlay:hover {
 .dfound:not(:open){
   & summary{
     &::after{
-      content: "Found it?";
+      content: "> Found it? <";
     }
   }
 }
@@ -216,7 +224,7 @@ underlay:hover {
 .pfound:not(:open){
   & summary{
     &::after{
-      content: "Found it?";
+      content: "> Found it? <";
     }
   }
 }
@@ -234,7 +242,7 @@ underlay:hover {
 .bfound:not(:open){
   & summary{
     &::after{
-      content: "Found it?";
+      content: "> Found it? <";
     }
   }
 }
@@ -252,7 +260,7 @@ underlay:hover {
 .cfound:not(:open){
   & summary{
     &::after{
-      content: "Found it?";
+      content: "> Found it? <";
     }
   }
 }
@@ -270,7 +278,7 @@ underlay:hover {
 .sfound:not(:open){
   & summary{
     &::after{
-      content: "Found it?";
+      content: "> Found it? <";
     }
   }
 }
@@ -288,7 +296,7 @@ underlay:hover {
 .rfound:not(:open){
   & summary{
     &::after{
-      content: "Found it?";
+      content: "> Found it? <";
     }
   }
 }
@@ -306,7 +314,7 @@ underlay:hover {
 .rnfound:not(:open){
   & summary{
     &::after{
-      content: "Found it?";
+      content: "> Found it? <";
     }
   }
 }
@@ -324,7 +332,7 @@ underlay:hover {
 .mfound:not(:open){
   & summary{
     &::after{
-      content: "Found it?";
+      content: "> Found it? <";
     }
   }
 }
