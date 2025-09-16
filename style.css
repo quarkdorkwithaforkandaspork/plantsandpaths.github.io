@@ -43,6 +43,7 @@ html{
   overscroll-behavior: none;
 }
 
+
 #logo{
   filter: drop-shadow(4px 4px 9px rgb(49, 29, 18));
 }
@@ -68,6 +69,11 @@ img {
   min-width: 350px;
   max-width: 350px;
   display: block;
+}
+
+details p{
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 summary::marker {
@@ -97,6 +103,14 @@ summary::after {
 
 .cardtitle {
   margin-left: 1rem;
+}
+
+.cardtext {
+  font-family: Baskervville;
+  color: rgb(40, 18, 14);
+  margin-left: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .card {
@@ -146,40 +160,16 @@ summary::after {
 
 }
 
-.plantimage:hover {
-  transform: scale(1.2) rotate3d(1, 2, 1, 20deg);
-  z-index: 10;
-}
-
-.plantimage:hover .underlay,
-underlay:hover {
-  width: 100%;
-  height: 25%;
-  padding: 1%;
-}
-
-.point{
-  cursor: pointer;
-}
-
-.point:hover{
-  color: rgb(225, 57, 138);
-}
-
 .wfound:not(:open){
   & summary{
     &::after{
-      content: "> Found it? <";
+      content: "> Found one! <";
     }
   }
 }
 
 .wfound:open{
   & summary{
-    &::after{
-      content: "The Wizard";
-
-    }
       pointer-events: none;
       user-select: none;
   }
@@ -188,16 +178,13 @@ underlay:hover {
 .ffound:not(:open){
   & summary{
     &::after{
-      content: "> Found it? <";
+      content: "> Found one! <";
     }
   }
 }
 
 .ffound:open{
   & summary{
-    &::after{
-      content: "The Fighter";
-    }
       pointer-events: none;
       user-select: none;
   }
@@ -206,16 +193,13 @@ underlay:hover {
 .dfound:not(:open){
   & summary{
     &::after{
-      content: "> Found it? <";
+      content: "> Found one! <";
     }
   }
 }
 
 .dfound:open{
   & summary{
-    &::after{
-      content: "The Druid";
-    }
       pointer-events: none;
       user-select: none;
   }
@@ -224,16 +208,13 @@ underlay:hover {
 .pfound:not(:open){
   & summary{
     &::after{
-      content: "> Found it? <";
+      content: "> Found one! <";
     }
   }
 }
 
 .pfound:open{
   & summary{
-    &::after{
-      content: "The Paladin";
-    }
       pointer-events: none;
       user-select: none;
   }
@@ -242,16 +223,13 @@ underlay:hover {
 .bfound:not(:open){
   & summary{
     &::after{
-      content: "> Found it? <";
+      content: "> Found one! <";
     }
   }
 }
 
 .bfound:open{
   & summary{
-    &::after{
-      content: "The Bard";
-    }
       pointer-events: none;
       user-select: none;
   }
@@ -260,16 +238,13 @@ underlay:hover {
 .cfound:not(:open){
   & summary{
     &::after{
-      content: "> Found it? <";
+      content: "> Found one! <";
     }
   }
 }
 
 .cfound:open{
   & summary{
-    &::after{
-      content: "The Cleric";
-    }
       pointer-events: none;
       user-select: none;
   }
@@ -278,16 +253,13 @@ underlay:hover {
 .sfound:not(:open){
   & summary{
     &::after{
-      content: "> Found it? <";
+      content: "> Found one! <";
     }
   }
 }
 
 .sfound:open{
   & summary{
-    &::after{
-      content: "The Sorcerer";
-    }
       pointer-events: none;
       user-select: none;
   }
@@ -296,16 +268,13 @@ underlay:hover {
 .rfound:not(:open){
   & summary{
     &::after{
-      content: "> Found it? <";
+      content: "> Found one! <";
     }
   }
 }
 
 .rfound:open{
   & summary{
-    &::after{
-      content: "The Rogue";
-    }
       pointer-events: none;
       user-select: none;
   }
@@ -314,16 +283,13 @@ underlay:hover {
 .rnfound:not(:open){
   & summary{
     &::after{
-      content: "> Found it? <";
+      content: "> Found one! <";
     }
   }
 }
 
 .rnfound:open{
   & summary{
-    &::after{
-      content: "The Ranger";
-    }
       pointer-events: none;
       user-select: none;
   }
@@ -332,16 +298,13 @@ underlay:hover {
 .mfound:not(:open){
   & summary{
     &::after{
-      content: "> Found it? <";
+      content: "> Found one! <";
     }
   }
 }
 
 .mfound:open{
   & summary{
-    &::after{
-      content: "The Monk";
-    }
       pointer-events: none;
       user-select: none;
   }
