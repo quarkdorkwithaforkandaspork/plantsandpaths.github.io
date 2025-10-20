@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: Baskervville;
+  src: url("Baskervville-VariableFont_wght.ttf");
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    background-image: url("wooden-floor-background.jpg");
+}
+
+h1 {
+    font-family: Baskervville;
+    margin: 10px;
+}
+
+p {
+    font-family: Baskervville;
+    margin: 10px;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+#title {
+    position: absolute;
+    text-align: start;
+    top: 30px;
+    left: 25px;
+}
+
+#title img{
+    width: 45%;
+}
+
+#p5-container {
+    position: relative;
+}
