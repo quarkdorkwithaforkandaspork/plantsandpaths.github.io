@@ -28,6 +28,10 @@ p {
     margin: 10px;
 }
 
+img {
+    filter: drop-shadow(4px 4px 9px rgb(49, 29, 18));
+}
+
 .white {
     color: white;
 }
@@ -45,7 +49,6 @@ p {
 
 #title img{
     width: 45%;
-    filter: drop-shadow(4px 4px 9px rgb(49, 29, 18));
 }
 
 #p5-container {
